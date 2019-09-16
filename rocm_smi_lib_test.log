@@ -1,0 +1,872 @@
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+python-pip is already the newest version (8.1.1-2ubuntu0.4).
+0 upgraded, 0 newly installed, 0 to remove and 60 not upgraded.
+Collecting prettytable
+  Downloading https://files.pythonhosted.org/packages/ef/30/4b0746848746ed5941f052479e7c23d2b56d174b82f4fd34a25e389831f5/prettytable-0.7.2.tar.bz2
+Building wheels for collected packages: prettytable
+  Running setup.py bdist_wheel for prettytable ... done
+  Stored in directory: /home/master/.cache/pip/wheels/80/34/1c/3967380d9676d162cb59513bd9dc862d0584e045a162095606
+Successfully built prettytable
+Installing collected packages: prettytable
+Successfully installed prettytable-0.7.2
+You are using pip version 8.1.1, however version 19.2.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+rocm_smi64 is already the newest version (0.1.1).
+0 upgraded, 0 newly installed, 0 to remove and 60 not upgraded.
+Entering Unit Test
+         Passed smilibDeviceGetName_test:11
+         Passed smilibDeviceGetName_test:14
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetName_test:23
+                 0x1
+        Name:
+         Passed smilibDeviceGetName_test:29
+                0x738c
+Device #1:
+        Handle:
+         Passed smilibDeviceGetName_test:23
+                 0x2
+        Name:
+         Passed smilibDeviceGetName_test:29
+                0x738c
+         Passed smilibSystemGetSMILIBVersion_test:47
+         Passed smilibSystemGetSMILIBVersion_test:50
+Devices found: 2
+Device #0:
+        RSMI version:
+         Passed smilibSystemGetSMILIBVersion_test:66
+                1.1.0
+Device #1:
+        RSMI version:
+         Passed smilibSystemGetSMILIBVersion_test:66
+                1.1.0
+         Passed smilibDeviceGetVbiosVersion_test:85
+         Passed smilibDeviceGetVbiosVersion_test:88
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetVbiosVersion_test:97
+                 0x1
+        VBIOS version:
+         Passed smilibDeviceGetVbiosVersion_test:104
+                113-D3430200-017
+Device #1:
+        Handle:
+         Passed smilibDeviceGetVbiosVersion_test:97
+                 0x2
+        VBIOS version:
+         Passed smilibDeviceGetVbiosVersion_test:104
+                113-D3430200-017
+         Passed smilibSystemGetDriverVersion_test:122
+         Passed smilibSystemGetDriverVersion_test:125
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibSystemGetDriverVersion_test:134
+                 0x1
+        Driver version:
+         Passed smilibSystemGetDriverVersion_test:141
+                5.0.82
+Device #1:
+        Handle:
+         Passed smilibSystemGetDriverVersion_test:134
+                 0x2
+        Driver version:
+         Passed smilibSystemGetDriverVersion_test:141
+                5.0.82
+         Passed smilibDeviceGetMemoryInfo_test:159
+         Passed smilibDeviceGetMemoryInfo_test:162
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetMemoryInfo_test:171
+                 0x1
+        Memory Info:
+         Passed smilibDeviceGetMemoryInfo_test:177
+                Total:  34342961152 bytes
+                Used:   12795904 bytes
+                Free:   34330165248 bytes
+Device #1:
+        Handle:
+         Passed smilibDeviceGetMemoryInfo_test:171
+                 0x2
+        Memory Info:
+         Passed smilibDeviceGetMemoryInfo_test:177
+                Total:  34342961152 bytes
+                Used:   12795904 bytes
+                Free:   34330165248 bytes
+         Passed smilibDeviceGetPciInfo_test:198
+         Passed smilibDeviceGetPciInfo_test:201
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetPciInfo_test:210
+                 0x1
+        PCI Info:
+         Passed smilibDeviceGetPciInfo_test:216
+                Domain: 0
+                Bus: 30
+                Device: 0
+                ID String: 00000000:1E:00.0
+Device #1:
+        Handle:
+         Passed smilibDeviceGetPciInfo_test:210
+                 0x2
+        PCI Info:
+         Passed smilibDeviceGetPciInfo_test:216
+                Domain: 1
+                Bus: 1
+                Device: 0
+                ID String: 00000001:01:00.0
+         Passed smilibDeviceGetPcieReplayCounter_test:237
+         Passed smilibDeviceGetPcieReplayCounter_test:240
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetPcieReplayCounter_test:249
+                 0x1
+                PCI Replay Counter Value:
+         Passed smilibDeviceGetPcieReplayCounter_test:255
+                        0
+Device #1:
+        Handle:
+         Passed smilibDeviceGetPcieReplayCounter_test:249
+                 0x2
+                PCI Replay Counter Value:
+         Passed smilibDeviceGetPcieReplayCounter_test:255
+                        0
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:273
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:276
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:285
+                 0x1
+                Generation:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:291
+This command is not supported.
+Device #1:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:285
+                 0x2
+                Generation:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:291
+This command is not supported.
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:309
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:312
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:321
+                 0x1
+                LinkWidth:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:327
+This command is not supported.
+Device #1:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:321
+                 0x2
+                LinkWidth:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:327
+This command is not supported.
+         Passed smilibDeviceGetPcieThroughput_test:345
+         Passed smilibDeviceGetPcieThroughput_test:348
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetPcieThroughput_test:357
+                 0x1
+                Throughput:
+         Passed smilibDeviceGetPcieThroughput_test:364
+                        Sent:2
+         Passed smilibDeviceGetPcieThroughput_test:369
+                        Received:0
+Device #1:
+        Handle:
+         Passed smilibDeviceGetPcieThroughput_test:357
+                 0x2
+                Throughput:
+         Passed smilibDeviceGetPcieThroughput_test:364
+                        Sent:2
+         Passed smilibDeviceGetPcieThroughput_test:369
+                        Received:0
+         Passed smilibDeviceGetMaxClockInfo_test:387
+         Passed smilibDeviceGetMaxClockInfo_test:390
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetMaxClockInfo_test:399
+                 0x1
+                Graphics Clock:
+         Passed smilibDeviceGetMaxClockInfo_test:405
+                        758MHz
+                SM Clock:
+         Passed smilibDeviceGetMaxClockInfo_test:410
+                        758MHz
+                Memory Clock:
+smi_lib_api_test: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/src/rsmi_porting.cc:589: rsmi_status_t get_frequencies(smilibDevice_t, smilibClockType_t, unsigned int*, rsmi_frequencies_t*): Assertion `f->num_supported >= 2' failed.
+Aborted
+Entering Stress Test for iter : 0
+         Passed smilibDeviceGetName_test:11
+         Passed smilibDeviceGetName_test:14
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetName_test:23
+                 0x1
+        Name:
+         Passed smilibDeviceGetName_test:29
+                0x738c
+Device #1:
+        Handle:
+         Passed smilibDeviceGetName_test:23
+                 0x2
+        Name:
+         Passed smilibDeviceGetName_test:29
+                0x738c
+         Passed smilibSystemGetSMILIBVersion_test:47
+         Passed smilibSystemGetSMILIBVersion_test:50
+Devices found: 2
+Device #0:
+        RSMI version:
+         Passed smilibSystemGetSMILIBVersion_test:66
+                1.1.0
+Device #1:
+        RSMI version:
+         Passed smilibSystemGetSMILIBVersion_test:66
+                1.1.0
+         Passed smilibDeviceGetVbiosVersion_test:85
+         Passed smilibDeviceGetVbiosVersion_test:88
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetVbiosVersion_test:97
+                 0x1
+        VBIOS version:
+         Passed smilibDeviceGetVbiosVersion_test:104
+                113-D3430200-017
+Device #1:
+        Handle:
+         Passed smilibDeviceGetVbiosVersion_test:97
+                 0x2
+        VBIOS version:
+         Passed smilibDeviceGetVbiosVersion_test:104
+                113-D3430200-017
+         Passed smilibSystemGetDriverVersion_test:122
+         Passed smilibSystemGetDriverVersion_test:125
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibSystemGetDriverVersion_test:134
+                 0x1
+        Driver version:
+         Passed smilibSystemGetDriverVersion_test:141
+                5.0.82
+Device #1:
+        Handle:
+         Passed smilibSystemGetDriverVersion_test:134
+                 0x2
+        Driver version:
+         Passed smilibSystemGetDriverVersion_test:141
+                5.0.82
+         Passed smilibDeviceGetMemoryInfo_test:159
+         Passed smilibDeviceGetMemoryInfo_test:162
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetMemoryInfo_test:171
+                 0x1
+        Memory Info:
+         Passed smilibDeviceGetMemoryInfo_test:177
+                Total:  34342961152 bytes
+                Used:   12795904 bytes
+                Free:   34330165248 bytes
+Device #1:
+        Handle:
+         Passed smilibDeviceGetMemoryInfo_test:171
+                 0x2
+        Memory Info:
+         Passed smilibDeviceGetMemoryInfo_test:177
+                Total:  34342961152 bytes
+                Used:   12795904 bytes
+                Free:   34330165248 bytes
+         Passed smilibDeviceGetPciInfo_test:198
+         Passed smilibDeviceGetPciInfo_test:201
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetPciInfo_test:210
+                 0x1
+        PCI Info:
+         Passed smilibDeviceGetPciInfo_test:216
+                Domain: 0
+                Bus: 30
+                Device: 0
+                ID String: 00000000:1E:00.0
+Device #1:
+        Handle:
+         Passed smilibDeviceGetPciInfo_test:210
+                 0x2
+        PCI Info:
+         Passed smilibDeviceGetPciInfo_test:216
+                Domain: 1
+                Bus: 1
+                Device: 0
+                ID String: 00000001:01:00.0
+         Passed smilibDeviceGetPcieReplayCounter_test:237
+         Passed smilibDeviceGetPcieReplayCounter_test:240
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetPcieReplayCounter_test:249
+                 0x1
+                PCI Replay Counter Value:
+         Passed smilibDeviceGetPcieReplayCounter_test:255
+                        0
+Device #1:
+        Handle:
+         Passed smilibDeviceGetPcieReplayCounter_test:249
+                 0x2
+                PCI Replay Counter Value:
+         Passed smilibDeviceGetPcieReplayCounter_test:255
+                        0
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:273
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:276
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:285
+                 0x1
+                Generation:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:291
+This command is not supported.
+Device #1:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkGeneration_test:285
+                 0x2
+                Generation:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:291
+This command is not supported.
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:309
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:312
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:321
+                 0x1
+                LinkWidth:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:327
+This command is not supported.
+Device #1:
+        Handle:
+         Passed smilibDeviceGetCurrPcieLinkWidth_test:321
+                 0x2
+                LinkWidth:
+        ===> ERROR: SMI_LIB call returned 3
+        ===> (RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.)
+        ===> at /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/test/rocm_smi_lib_test_api.cc:327
+This command is not supported.
+         Passed smilibDeviceGetPcieThroughput_test:345
+         Passed smilibDeviceGetPcieThroughput_test:348
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetPcieThroughput_test:357
+                 0x1
+                Throughput:
+         Passed smilibDeviceGetPcieThroughput_test:364
+                        Sent:2
+         Passed smilibDeviceGetPcieThroughput_test:369
+                        Received:0
+Device #1:
+        Handle:
+         Passed smilibDeviceGetPcieThroughput_test:357
+                 0x2
+                Throughput:
+         Passed smilibDeviceGetPcieThroughput_test:364
+                        Sent:2
+         Passed smilibDeviceGetPcieThroughput_test:369
+                        Received:0
+         Passed smilibDeviceGetMaxClockInfo_test:387
+         Passed smilibDeviceGetMaxClockInfo_test:390
+Devices found: 2
+Device #0:
+        Handle:
+         Passed smilibDeviceGetMaxClockInfo_test:399
+                 0x1
+                Graphics Clock:
+         Passed smilibDeviceGetMaxClockInfo_test:405
+                        758MHz
+                SM Clock:
+         Passed smilibDeviceGetMaxClockInfo_test:410
+                        758MHz
+                Memory Clock:
+smi_lib_api_test: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/src/rsmi_porting.cc:589: rsmi_status_t get_frequencies(smilibDevice_t, smilibClockType_t, unsigned int*, rsmi_frequencies_t*): Assertion `f->num_supported >= 2' failed.
+Aborted
+Cloning into 'rocm_smi_lib'...
+remote: Enumerating objects: 1421, done.
+remote: Total 1421 (delta 0), reused 0 (delta 0), pack-reused 1421
+Receiving objects: 100% (1421/1421), 4.72 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (752/752), done.
+Checking connectivity... done.
+fatal: No names found, cannot describe anything.
+usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+  limiting output:
+    --max-count=<n>
+    --max-age=<epoch>
+    --min-age=<epoch>
+    --sparse
+    --no-merges
+    --min-parents=<n>
+    --no-min-parents
+    --max-parents=<n>
+    --no-max-parents
+    --remove-empty
+    --all
+    --branches
+    --tags
+    --remotes
+    --stdin
+    --quiet
+  ordering output:
+    --topo-order
+    --date-order
+    --reverse
+  formatting output:
+    --parents
+    --children
+    --objects | --objects-edge
+    --unpacked
+    --header | --pretty
+    --abbrev=<n> | --no-abbrev
+    --abbrev-commit
+    --left-right
+    --count
+  special purpose:
+    --bisect
+    --bisect-vars
+    --bisect-all
+usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+  limiting output:
+    --max-count=<n>
+    --max-age=<epoch>
+    --min-age=<epoch>
+    --sparse
+    --no-merges
+    --min-parents=<n>
+    --no-min-parents
+    --max-parents=<n>
+    --no-max-parents
+    --remove-empty
+    --all
+    --branches
+    --tags
+    --remotes
+    --stdin
+    --quiet
+  ordering output:
+    --topo-order
+    --date-order
+    --reverse
+  formatting output:
+    --parents
+    --children
+    --objects | --objects-edge
+    --unpacked
+    --header | --pretty
+    --abbrev=<n> | --no-abbrev
+    --abbrev-commit
+    --left-right
+    --count
+  special purpose:
+    --bisect
+    --bisect-vars
+    --bisect-all
+/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/cmake_modules/version_util.sh: line 26: let: NUM_COMMITS=-: syntax error: operand expected (error token is "-")
+ were found since previous release
+Package version: 1.0.0..local_build-0-aa230d1
+fatal: No names found, cannot describe anything.
+SOVERSION: 1.0
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE)
+Doxygen is not found. Will not generate documents.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build
+/usr/bin/cmake -H/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib -B/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make -f CMakeFiles/rocm_smi64.dir/build.make CMakeFiles/rocm_smi64.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles/rocm_smi64.dir/DependInfo.cmake --color=
+Scanning dependencies of target rocm_smi64
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make -f CMakeFiles/rocm_smi64.dir/build.make CMakeFiles/rocm_smi64.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+[  8%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_device.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_device.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_device.cc
+[ 16%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_main.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_main.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_main.cc
+[ 25%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_monitor.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_monitor.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_monitor.cc
+[ 33%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi.cc
+/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi.cc:1250:73: warning: unused parameter 'typ' [-Wunused-parameter]
+                                                size_t len, eNameStrType typ) {
+                                                                         ^
+[ 41%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_power_mon.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_power_mon.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_power_mon.cc
+[ 50%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_utils.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_utils.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_utils.cc
+[ 58%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_counters.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_counters.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_counters.cc
+[ 66%] Building CXX object CMakeFiles/rocm_smi64.dir/src/rocm_smi_kfd.cc.o
+/usr/bin/c++   -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG -fPIC   -o CMakeFiles/rocm_smi64.dir/src/rocm_smi_kfd.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi_kfd.cc
+[ 75%] Building C object CMakeFiles/rocm_smi64.dir/src/shared_mutex/shared_mutex.c.o
+/usr/bin/cc  -Drocm_smi64_EXPORTS -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -fPIC   -o CMakeFiles/rocm_smi64.dir/src/shared_mutex/shared_mutex.c.o   -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex/shared_mutex.c
+[ 83%] Linking CXX shared library librocm_smi64.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/rocm_smi64.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG  -shared -Wl,-soname,librocm_smi64.so.1 -o librocm_smi64.so.1.0 CMakeFiles/rocm_smi64.dir/src/rocm_smi_device.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi_main.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi_monitor.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi_power_mon.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi_utils.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi_counters.cc.o CMakeFiles/rocm_smi64.dir/src/rocm_smi_kfd.cc.o CMakeFiles/rocm_smi64.dir/src/shared_mutex/shared_mutex.c.o -lpthread -lrt
+/usr/bin/cmake -E cmake_symlink_library librocm_smi64.so.1.0 librocm_smi64.so.1 librocm_smi64.so
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+[ 83%] Built target rocm_smi64
+make -f CMakeFiles/rocm_smi_ex.dir/build.make CMakeFiles/rocm_smi_ex.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles/rocm_smi_ex.dir/DependInfo.cmake --color=
+Scanning dependencies of target rocm_smi_ex
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make -f CMakeFiles/rocm_smi_ex.dir/build.make CMakeFiles/rocm_smi_ex.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+[ 91%] Building CXX object CMakeFiles/rocm_smi_ex.dir/example/rocm_smi_example.cc.o
+/usr/bin/c++    -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/shared_mutex  -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG   -o CMakeFiles/rocm_smi_ex.dir/example/rocm_smi_example.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/example/rocm_smi_example.cc
+[100%] Linking CXX executable rocm_smi_ex
+/usr/bin/cmake -E cmake_link_script CMakeFiles/rocm_smi_ex.dir/link.txt --verbose=1
+/usr/bin/c++    -Wall -Wextra -fno-rtti -m64 -msse -msse2 -std=c++11  -ggdb -O0 -DDEBUG   CMakeFiles/rocm_smi_ex.dir/example/rocm_smi_example.cc.o  -o rocm_smi_ex librocm_smi64.so.1.0 -lpthread -lrt -Wl,-rpath,/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+[100%] Built target rocm_smi_ex
+make[1]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+/usr/bin/cmake -E cmake_progress_start /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles 0
+/usr/bin/cmake -H/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib -B/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make -f CMakeFiles/rocm_smi64.dir/build.make CMakeFiles/rocm_smi64.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles/rocm_smi64.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make -f CMakeFiles/rocm_smi64.dir/build.make CMakeFiles/rocm_smi64.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make[2]: Nothing to be done for 'CMakeFiles/rocm_smi64.dir/build'.
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+[ 83%] Built target rocm_smi64
+make -f CMakeFiles/rocm_smi_ex.dir/build.make CMakeFiles/rocm_smi_ex.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles/rocm_smi_ex.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make -f CMakeFiles/rocm_smi_ex.dir/build.make CMakeFiles/rocm_smi_ex.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make[2]: Nothing to be done for 'CMakeFiles/rocm_smi_ex.dir/build'.
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+[100%] Built target rocm_smi_ex
+make[1]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+/usr/bin/cmake -E cmake_progress_start /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[1]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+make[1]: Nothing to be done for 'preinstall'.
+make[1]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/build'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: ""
+-- Installing: /opt/rocm/rocm_smi/lib/librocm_smi64.so.1.0
+-- Installing: /opt/rocm/rocm_smi/lib/librocm_smi64.so.1
+-- Up-to-date: /opt/rocm/rocm_smi/lib/librocm_smi64.so
+-- Installing: /opt/rocm/rocm_smi/include/rocm_smi/rocm_smi.h
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+
+Build Configuration:
+-------------IS64BIT: 1
+-----------BuildType: Debug
+------------Compiler: /usr/bin/c++
+-------------Version: 5.4.0
+--------Proj Src Dir: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test
+--------Proj Bld Dir: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build
+--------Proj Lib Dir: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/lib
+--------Proj Exe Dir: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/bin
+--------RSMI Lib Dir: /opt/rocm/rocm_smi/lib
+
+ISDEBUG STEP:Done
+-- Found PythonInterp: /usr/bin/python (found version "2.7.12")
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build
+/usr/bin/cmake -H/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test -B/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/CMakeFiles /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+make -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=
+Scanning dependencies of target gtest
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+make -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[  2%] Building CXX object gtest/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest && /usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/src/gtest-all.cc
+[  5%] Linking CXX static library libgtestd.a
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest && /usr/bin/cmake -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest && /usr/bin/cmake -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=1
+/usr/bin/ar qc libgtestd.a  CMakeFiles/gtest.dir/src/gtest-all.cc.o
+/usr/bin/ranlib libgtestd.a
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[  5%] Built target gtest
+make -f CMakeFiles/rsmitst64.dir/build.make CMakeFiles/rsmitst64.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/CMakeFiles/rsmitst64.dir/DependInfo.cmake --color=
+Scanning dependencies of target rsmitst64
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+make -f CMakeFiles/rsmitst64.dir/build.make CMakeFiles/rsmitst64.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[  8%] Building CXX object CMakeFiles/rsmitst64.dir/test_common.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/test_common.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/test_common.cc
+[ 10%] Building CXX object CMakeFiles/rsmitst64.dir/test_base.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/test_base.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/test_base.cc
+[ 13%] Building CXX object CMakeFiles/rsmitst64.dir/main.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/main.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/main.cc
+[ 16%] Building CXX object CMakeFiles/rsmitst64.dir/test_utils.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/test_utils.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/test_utils.cc
+[ 18%] Building CXX object CMakeFiles/rsmitst64.dir/functional/frequencies_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/frequencies_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/frequencies_read.cc
+[ 21%] Building CXX object CMakeFiles/rsmitst64.dir/functional/xgmi_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/xgmi_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/xgmi_read_write.cc
+[ 24%] Building CXX object CMakeFiles/rsmitst64.dir/functional/fan_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/fan_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/fan_read_write.cc
+[ 27%] Building CXX object CMakeFiles/rsmitst64.dir/functional/power_cap_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/power_cap_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/power_cap_read_write.cc
+[ 29%] Building CXX object CMakeFiles/rsmitst64.dir/functional/version_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/version_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/version_read.cc
+[ 32%] Building CXX object CMakeFiles/rsmitst64.dir/functional/power_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/power_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/power_read_write.cc
+[ 35%] Building CXX object CMakeFiles/rsmitst64.dir/functional/err_cnt_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/err_cnt_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/err_cnt_read.cc
+[ 37%] Building CXX object CMakeFiles/rsmitst64.dir/functional/gpu_busy_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/gpu_busy_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/gpu_busy_read.cc
+[ 40%] Building CXX object CMakeFiles/rsmitst64.dir/functional/id_info_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/id_info_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/id_info_read.cc
+[ 43%] Building CXX object CMakeFiles/rsmitst64.dir/functional/fan_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/fan_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/fan_read.cc
+[ 45%] Building CXX object CMakeFiles/rsmitst64.dir/functional/perf_level_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/perf_level_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/perf_level_read_write.cc
+[ 48%] Building CXX object CMakeFiles/rsmitst64.dir/functional/pci_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/pci_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/pci_read_write.cc
+[ 51%] Building CXX object CMakeFiles/rsmitst64.dir/functional/power_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/power_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/power_read.cc
+[ 54%] Building CXX object CMakeFiles/rsmitst64.dir/functional/sys_info_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/sys_info_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/sys_info_read.cc
+[ 56%] Building CXX object CMakeFiles/rsmitst64.dir/functional/overdrive_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/overdrive_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/overdrive_read_write.cc
+[ 59%] Building CXX object CMakeFiles/rsmitst64.dir/functional/perf_level_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/perf_level_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/perf_level_read.cc
+[ 62%] Building CXX object CMakeFiles/rsmitst64.dir/functional/frequencies_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/frequencies_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/frequencies_read_write.cc
+[ 64%] Building CXX object CMakeFiles/rsmitst64.dir/functional/perf_cntr_read_write.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/perf_cntr_read_write.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/perf_cntr_read_write.cc
+[ 67%] Building CXX object CMakeFiles/rsmitst64.dir/functional/mem_page_info_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/mem_page_info_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/mem_page_info_read.cc
+[ 70%] Building CXX object CMakeFiles/rsmitst64.dir/functional/mem_util_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/mem_util_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/mem_util_read.cc
+[ 72%] Building CXX object CMakeFiles/rsmitst64.dir/functional/overdrive_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/overdrive_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/overdrive_read.cc
+[ 75%] Building CXX object CMakeFiles/rsmitst64.dir/functional/process_info_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/process_info_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/process_info_read.cc
+[ 78%] Building CXX object CMakeFiles/rsmitst64.dir/functional/temp_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/temp_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/temp_read.cc
+[ 81%] Building CXX object CMakeFiles/rsmitst64.dir/functional/volt_freq_curv_read.cc.o
+/usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/opt/rocm/rocm_smi/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/.. -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -pthread -o CMakeFiles/rsmitst64.dir/functional/volt_freq_curv_read.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/functional/volt_freq_curv_read.cc
+[ 83%] Linking CXX executable rsmitst64
+/usr/bin/cmake -E cmake_link_script CMakeFiles/rsmitst64.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   CMakeFiles/rsmitst64.dir/test_common.cc.o CMakeFiles/rsmitst64.dir/test_base.cc.o CMakeFiles/rsmitst64.dir/main.cc.o CMakeFiles/rsmitst64.dir/test_utils.cc.o CMakeFiles/rsmitst64.dir/functional/frequencies_read.cc.o CMakeFiles/rsmitst64.dir/functional/xgmi_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/fan_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/power_cap_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/version_read.cc.o CMakeFiles/rsmitst64.dir/functional/power_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/err_cnt_read.cc.o CMakeFiles/rsmitst64.dir/functional/gpu_busy_read.cc.o CMakeFiles/rsmitst64.dir/functional/id_info_read.cc.o CMakeFiles/rsmitst64.dir/functional/fan_read.cc.o CMakeFiles/rsmitst64.dir/functional/perf_level_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/pci_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/power_read.cc.o CMakeFiles/rsmitst64.dir/functional/sys_info_read.cc.o CMakeFiles/rsmitst64.dir/functional/overdrive_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/perf_level_read.cc.o CMakeFiles/rsmitst64.dir/functional/frequencies_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/perf_cntr_read_write.cc.o CMakeFiles/rsmitst64.dir/functional/mem_page_info_read.cc.o CMakeFiles/rsmitst64.dir/functional/mem_util_read.cc.o CMakeFiles/rsmitst64.dir/functional/overdrive_read.cc.o CMakeFiles/rsmitst64.dir/functional/process_info_read.cc.o CMakeFiles/rsmitst64.dir/functional/temp_read.cc.o CMakeFiles/rsmitst64.dir/functional/volt_freq_curv_read.cc.o  -o rsmitst64  -L/opt/rocm/rocm_smi/lib -rdynamic gtest/googlemock/gtest/libgtestd.a -lrocm_smi64 -lc -lstdc++ -lpthread -pthread -Wl,-rpath,/opt/rocm/rocm_smi/lib:
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[ 83%] Built target rsmitst64
+make -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake --color=
+Scanning dependencies of target gmock
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+make -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[ 86%] Building CXX object gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock && /usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock/include -I/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock/src/gmock-all.cc
+[ 89%] Linking CXX static library libgmockd.a
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock && /usr/bin/cmake -P CMakeFiles/gmock.dir/cmake_clean_target.cmake
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock && /usr/bin/cmake -E cmake_link_script CMakeFiles/gmock.dir/link.txt --verbose=1
+/usr/bin/ar qc libgmockd.a  CMakeFiles/gmock.dir/src/gmock-all.cc.o
+/usr/bin/ranlib libgmockd.a
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[ 89%] Built target gmock
+make -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=
+Scanning dependencies of target gmock_main
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+make -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[ 91%] Building CXX object gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock && /usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googlemock/src/gmock_main.cc
+[ 94%] Linking CXX static library libgmock_maind.a
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock && /usr/bin/cmake -P CMakeFiles/gmock_main.dir/cmake_clean_target.cmake
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock && /usr/bin/cmake -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=1
+/usr/bin/ar qc libgmock_maind.a  CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+/usr/bin/ranlib libgmock_maind.a
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[ 94%] Built target gmock_main
+make -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=
+Scanning dependencies of target gtest_main
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+make -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+make[2]: Entering directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[ 97%] Building CXX object gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest && /usr/bin/c++   -DDEBUG -DLITTLEENDIAN_CPU=1 -D__linux__ -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/include -isystem /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest  -std=c++11  -fexceptions -fno-rtti -fno-math-errno -fno-threadsafe-statics -fmerge-all-constants -fms-extensions -Wall -Wextra -m64  -msse -msse2 -ggdb -O0 -g   -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/tests/rocm_smi_test/gtest/googletest/src/gtest_main.cc
+[100%] Linking CXX static library libgtest_maind.a
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest && /usr/bin/cmake -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
+cd /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/gtest/googlemock/gtest && /usr/bin/cmake -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=1
+/usr/bin/ar qc libgtest_maind.a  CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+/usr/bin/ranlib libgtest_maind.a
+make[2]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+[100%] Built target gtest_main
+make[1]: Leaving directory '/home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build'
+/usr/bin/cmake -E cmake_progress_start /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/test_build/CMakeFiles 0
+[==========] Running 24 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 15 tests from rsmitstReadOnly
+[ RUN      ] rsmitstReadOnly.TestVersionRead
+###############################################################################
+
+        #### TEST NAME ####
+RSMI Version Read Test
+
+        #### TEST DESCRIPTION ####
+The Version Read tests verifies that the RSMI library version can be read
+properly.
+
+        #### TEST SETUP ####
+
+        #### TEST EXECUTION ####
+        **RocM SMI Library version: 1.0.0 (0)
+        **Driver Version: 5.0.82
+
+        #### TEST RESULTS ####
+
+        #### TEST CLEAN UP ####
+[       OK ] rsmitstReadOnly.TestVersionRead (2 ms)
+[ RUN      ] rsmitstReadOnly.FanRead
+###############################################################################
+
+        #### TEST NAME ####
+RSMI Fan Read Test
+
+        #### TEST DESCRIPTION ####
+The Fan Read tests verifies that the fan monitors can be read properly.
+
+        #### TEST SETUP ####
+
+        #### TEST EXECUTION ####
+        **Device index: 0
+        **Device ID: 0x738c
+        **Device name: 0x738c
+        **Device Vendor ID: 0x1002
+        **Subsystem ID: 0xc34
+        **Subsystem Vendor ID: 0x1002
+        **Current Fan Speed: 0% (0/255)
+        **Current fan RPMs: 0
+        **Device index: 1
+        **Device ID: 0x738c
+        **Device name: 0x738c
+        **Device Vendor ID: 0x1002
+        **Subsystem ID: 0xc34
+        **Subsystem Vendor ID: 0x1002
+        **Current Fan Speed: 0% (0/255)
+        **Current fan RPMs: 0
+
+        #### TEST RESULTS ####
+
+        #### TEST CLEAN UP ####
+[       OK ] rsmitstReadOnly.FanRead (10 ms)
+[ RUN      ] rsmitstReadOnly.TempRead
+###############################################################################
+
+        #### TEST NAME ####
+RSMI Temp Read Test
+
+        #### TEST DESCRIPTION ####
+The Temperature Read tests verifies that the temperature monitors can be
+read properly.
+
+        #### TEST SETUP ####
+
+       #### TEST EXECUTION ####
+        **Device index: 0
+        **Device ID: 0x738c
+        **Device name: 0x738c
+        **Device Vendor ID: 0x1002
+        **Subsystem ID: 0xc34
+        **Subsystem Vendor ID: 0x1002
+rsmitst64: /home/master/MLSEQA_TestRepo/ROCM_Tools/rocm_smi_lib_test/rocm_smi_lib/src/rocm_smi.cc:831: rsmi_status_t get_power_profiles(uint32_t, rsmi_power_profile_status_t*, std::map<rsmi_power_profile_preset_masks_t, unsigned int>*): Assertion `p->current != RSMI_PWR_PROF_PRST_INVALID' failed.
+Aborted
+
